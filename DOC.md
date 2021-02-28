@@ -72,7 +72,9 @@ We have provided automated setup with this bot.
 
 1. Create the bot's role following the [specification](#Role:-Queuebot)
 2. Assign the bot with the role
-3. Send `!start` in a text channel
+3. Create the Admin role following the [specification](#Role:-Admin)
+4. Assign yourself the Admin role
+5. Send `!start` in a text channel
 
 ## Commands
 
@@ -142,18 +144,27 @@ This role is an admin role, and it is recommended to be granted all permissions,
 
 An elevated Admin role can be created to grant the latter two permissions (which can adversely affect student engagement)
 
+#### Role: Admin
+
+Permissions: 
+
+All (including Administrator) except
+
+- Allow anyone to @mention this role
+
+This will allow you to run all the setup commands.
+
 #### Role: Queuebot
 
 Also: Name that you gave the bot
 
 Note: This role may be automatically created with the bot. You will need to move this role above any of the roles you create below in the [Meeting Rooms section](#meeting-rooms).
 
-Permissions:
+Permissions: 
 
-All except
+All (including Administrator) except
 
 - Allow anyone to @mention this role
-- Administrator
 
 This will allow the bot to perform its duties.
 

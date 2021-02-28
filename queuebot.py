@@ -294,7 +294,7 @@ class Queue(commands.Cog):
             state = 'OPEN'
         else:
             state = 'CLOSED'
-        await ctx.send(f'Queue is now {state}')
+        #await ctx.send(f'Queue is now {state}')
         qchannel = discord.utils.get(ctx.guild.text_channels, name=self.config['queue_channel'])
         if ctx.channel != qchannel:
             await qchannel.send(f'Queue is now {state}')
